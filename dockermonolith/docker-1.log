@@ -1,0 +1,7 @@
+REPOSITORY                 TAG       IMAGE ID       CREATED         SIZE
+yourname/ubuntu-tmp-file   latest    71d5f86b9982   4 minutes ago   63.3MB
+ubuntu                     18.04     c090eaba6b94   2 weeks ago     63.3MB
+hello-world                latest    bf756fb1ae65   13 months ago   13.3kB
+
+docker inspect <u_image_id> -  показывает обшую информацию по образу, его конфигурацию, версию докера, информацию по слоям и др.
+docker inspect <u_container_id> -  показывает подробную информацию по контейнеру, PID, конфигурацию хоста, сетевые настройки и пр.
