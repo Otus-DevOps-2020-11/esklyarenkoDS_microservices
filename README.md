@@ -1,6 +1,21 @@
 # esklyarenkoDS_microservices
 esklyarenkoDS microservices repository
 
+Домашняя работа №18
+
+- Подключились к docker-host и запустили готовый образ Prometheus для ознакомления
+- Посмотрели интерфейс, метрики, цели.
+- Собрали свой образ с Prometheus с конфигурацией для мониторинга наших микросервисов
+- Сделали сборку микросервисов и проверили список endpoint-ов
+- Проверили метрики рабочих\нерабочих микросервисов в графическом режиме
+- Подключили node exporter для сборка метрик хоста.
+- Пересоздали сервисы и проверили работу метрик в динамике (в частности load)
+- Запушили собранные сервисы на DocekrHub:
+  https://hub.docker.com/repository/docker/esklyarenkods/ui
+  https://hub.docker.com/repository/docker/esklyarenkods/post
+  https://hub.docker.com/repository/docker/esklyarenkods/comment
+  https://hub.docker.com/repository/docker/esklyarenkods/prometheus
+
 Домашняя работа №16
 
 - Подключились к docker host  и запустили контейнеры:
