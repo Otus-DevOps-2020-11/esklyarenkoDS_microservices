@@ -10,6 +10,7 @@ services:
         aliases:
           - post_db
           - comment_db
+  
   ui:
     build: ../src/ui
 #    image: ${USERNAME}/ui:1.0
@@ -64,4 +65,5 @@ networks:
       driver: default
       config:  
         - subnet: 10.0.1.0/24
+        
         
