@@ -10,6 +10,7 @@ services:
         aliases:
           - post_db
           - comment_db
+  
   ui:
     build: ../src/ui
 #    image: ${USERNAME}/ui:1.0
@@ -44,39 +45,8 @@ services:
         aliases:
           - post
 
-  prometheus:
-    image: ${USERNAME}/prometheus
-    ports:
-      - '9090:9090'
-    volumes:
-      - prometheus_data:/prometheus
-    command: # Передаем доп параметры в командной строке
-      - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--storage.tsdb.path=/prometheus'
-      - '--storage.tsdb.retention=1d' # Задаем время хранения метрик в 1 день
-    networks:
-      - back_net
-      - front_net
-
-  node-exporter:
-    image: prom/node-exporter:v0.15.2
-    user: root
-    volumes:
-      - /proc:/host/proc:ro
-      - /sys:/host/sys:ro
-      - /:/rootfs:ro
-    command:
-      - '--path.procfs=/host/proc'
-      - '--path.sysfs=/host/sys'
-      - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
-    networks:
-      - back_net
-      - front_net
-  
-
 volumes:
   post_db:
-  prometheus_data:
 
 #networks:
 #  reddit:
@@ -95,4 +65,5 @@ networks:
       driver: default
       config:  
         - subnet: 10.0.1.0/24
+        
         

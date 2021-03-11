@@ -1,6 +1,26 @@
 # esklyarenkoDS_microservices
 esklyarenkoDS microservices repository
 
+Домашняя работа №19
+
+- Создали Docker хост в Yandex Cloud
+- Создали docker-compose-monitoring.yml и вынесли в него мониторинг. В docker-compose.yml оставили только приложения.
+- Добавили сервис cAdvisor в docker-compose-monitoring.yml и в prometheus.yml чтобы он начал собирать метрики.
+- Запустили сервисы и посмотрели интерфейс cAdvisor
+- Добавили сервис Grafana в docker-compose-monitoring.yml
+- В сервисе Grafana добавили источник данных Prometheus, создали несколько дашбордов, а так же импортировали и экспортировали их. Сохранены в папке grafana/dashboards
+- Проверили работу разных метрик, используя функцию rate(), histogram_quantile
+- Собрали образ и подключили AlertManager
+- Создали свой Incoming Webhook для Slack.
+- Сконфигурировали AlertManager и останавливая сервисы проверили работу. Сообщения отправляются в канал #evgeniy_sklyarenko. Алерты так же можно увидеть в веб-интерфейсе на порту 9093.
+- Запушили собранные образы:
+https://hub.docker.com/repository/docker/esklyarenkods/post
+https://hub.docker.com/repository/docker/esklyarenkods/comment
+https://hub.docker.com/repository/docker/esklyarenkods/ui
+https://hub.docker.com/repository/docker/esklyarenkods/alertmanager
+https://hub.docker.com/repository/docker/esklyarenkods/prometheus
+
+
 Домашняя работа №18
 
 - Подключились к docker-host и запустили готовый образ Prometheus для ознакомления
