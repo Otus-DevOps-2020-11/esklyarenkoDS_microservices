@@ -1,0 +1,16 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: create the 'test' user
+      user: name=test append=yes state=present createhome=yes shell=/bin/bash
+
+    - name: allow 'test' to have passwordless sudo
+      lineinfile:
+        dest: /etc/sudoers
+        line: 'test ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
+
+    - name: set up authorized keys for the test user
+      authorized_key: user=test key="{{item}}"
+      with_file:
+        - ~/.ssh/appuser.pub

@@ -1,6 +1,15 @@
 # esklyarenkoDS_microservices
 esklyarenkoDS microservices repository
 
+Домашняя работа №21
+
+- Установлен k8s на трех нодах (одна master, две worker) с помощью kubeadm.
+  По инструкции https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04-ru
+- После добавления нод в кластер проверили командой kubectl get nodes состояние
+- Успешно применили манифест post-deployment.yml
+- Описали установку в ansible, terraform (пока 1 нода)
+- Создали директорию reddit для дальнейшего наполнения
+
 Домашняя работа №20
 
 - Обновили код микросервиса и сделали сборку образов с новыми тегами.
