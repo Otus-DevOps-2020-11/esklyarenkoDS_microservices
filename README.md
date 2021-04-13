@@ -1,6 +1,16 @@
 # esklyarenkoDS_microservices
 esklyarenkoDS microservices repository
 
+Домашняя работа №22
+
+- Развернули k8s локально с помощью minikube
+- Описали состояние микросервисов в yaml манифестах в kubernetes/reddit
+- Развернули кластер в YC. Создали группу узлов.
+- Создали в нем dev namespace и задеплоили в него все микросервисы
+  kubectl apply -f ./kubernetes/reddit/ -n dev
+- Проверить работоспособность можно по адресу http://84.252.129.234:30218
+
+
 Домашняя работа №21
 
 - Установлен k8s на трех нодах (одна master, две worker) с помощью kubeadm.
