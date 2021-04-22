@@ -1,6 +1,14 @@
 # esklyarenkoDS_microservices
 esklyarenkoDS microservices repository
 
+Домашняя работа №23
+
+- Проверили разницу между сервисами типа ClusterIP и NodePort, LoadBalancer.
+- Установили Ingress Controller и настроили Ingress вместо LoadBalancer.
+- Защитили сервис с помощью TLS и описали Secret в виде манифеста.
+- Настроили Network Policy
+- Создали PersistentVolume в YC, добавили запрос PersistentVolumeClain для mongo
+
 Домашняя работа №22
 
 - Развернули k8s локально с помощью minikube

@@ -8,3 +8,5 @@ variables.json
 jdauphant.nginx
 *.env
 *.tfvars
+tls.crt
+tls.key
