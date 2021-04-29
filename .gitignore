@@ -10,5 +10,3 @@ jdauphant.nginx
 *.tfvars
 tls.crt
 tls.key
-Gitlab_ci/
-gitlab/
