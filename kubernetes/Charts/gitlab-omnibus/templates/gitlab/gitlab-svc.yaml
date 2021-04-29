@@ -28,9 +28,4 @@ spec:
       targetPort: prometheus
     - name: web
       port: 80
-      targetPort: workhorse      
-    {{- if and .Values.pagesExternalScheme .Values.pagesExternalDomain}}
-    - name: pages
-      port: 8090
-      targetPort: pages
-    {{- end }}
+      targetPort: workhorse
