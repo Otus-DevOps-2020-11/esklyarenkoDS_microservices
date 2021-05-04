@@ -1,7 +1,16 @@
 # esklyarenkoDS_microservices
 esklyarenkoDS microservices repository
 
-Домашняя работа №24
+Домашнаяя работа №24
+
+- Развернули Prometheus в k8s из helm чарта
+- Посмотрели таргеты для сбора метрик
+- Запустили приложение reddit из чарта. Сконфигурировали метрики приложений
+- Добавили job_name в Prometheus для каждой компоненты приложения
+- Установили Grafana из helm чарта.
+- Добавили и настроили дашборды для работы в разрезе namespace k8s
+
+Домашняя работа №23
 
 - Установили Helm (в том числе опробовали версиб 2 и 3)
 - Сделали ншаблоны манифестов в чарте. Задеплоили
@@ -9,8 +18,7 @@ esklyarenkoDS microservices repository
 - Настроили проекты в Gitlab.
 - Настроили CI для микросервисов. Задеплоили приложение.
 
-
-Домашняя работа №23
+Домашняя работа №22
 
 - Проверили разницу между сервисами типа ClusterIP и NodePort, LoadBalancer.
 - Установили Ingress Controller и настроили Ingress вместо LoadBalancer.
@@ -18,7 +26,7 @@ esklyarenkoDS microservices repository
 - Настроили Network Policy
 - Создали PersistentVolume в YC, добавили запрос PersistentVolumeClain для mongo
 
-Домашняя работа №22
+Домашняя работа №21
 
 - Развернули k8s локально с помощью minikube
 - Описали состояние микросервисов в yaml манифестах в kubernetes/reddit
@@ -27,8 +35,7 @@ esklyarenkoDS microservices repository
   kubectl apply -f ./kubernetes/reddit/ -n dev
 - Проверить работоспособность можно по адресу http://84.252.129.234:30218
 
-
-Домашняя работа №21
+Домашняя работа №20
 
 - Установлен k8s на трех нодах (одна master, две worker) с помощью kubeadm.
   По инструкции https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04-ru
@@ -37,7 +44,7 @@ esklyarenkoDS microservices repository
 - Описали установку в ansible, terraform (пока 1 нода)
 - Создали директорию reddit для дальнейшего наполнения
 
-Домашняя работа №20
+Домашняя работа №19
 
 - Обновили код микросервиса и сделали сборку образов с новыми тегами.
 - Сделали отдельный docker-compose-logging.yml для логирования.
@@ -49,7 +56,7 @@ esklyarenkoDS microservices repository
 - Применили несколько grok-шаблонов и посмотрели логи.
 - Подключили сервис Zipkin, посмотрели трейсы в его интейрфейсе
 
-Домашняя работа №19
+Домашняя работа №18
 
 - Создали Docker хост в Yandex Cloud
 - Создали docker-compose-monitoring.yml и вынесли в него мониторинг. В docker-compose.yml оставили только приложения.
@@ -68,8 +75,7 @@ https://hub.docker.com/repository/docker/esklyarenkods/ui
 https://hub.docker.com/repository/docker/esklyarenkods/alertmanager
 https://hub.docker.com/repository/docker/esklyarenkods/prometheus
 
-
-Домашняя работа №18
+Домашняя работа №17
 
 - Подключились к docker-host и запустили готовый образ Prometheus для ознакомления
 - Посмотрели интерфейс, метрики, цели.
