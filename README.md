@@ -10,6 +10,13 @@ esklyarenkoDS microservices repository
 - Установили Grafana из helm чарта.
 - Добавили и настроили дашборды для работы в разрезе namespace k8s
 
+Домашняя работа №23
+
+- Установили Helm (в том числе опробовали версиб 2 и 3)
+- Сделали ншаблоны манифестов в чарте. Задеплоили
+- Установили Gitlab  с помощью чарта.
+- Настроили проекты в Gitlab.
+- Настроили CI для микросервисов. Задеплоили приложение.
 
 Домашняя работа №22
 
@@ -27,7 +34,6 @@ esklyarenkoDS microservices repository
 - Создали в нем dev namespace и задеплоили в него все микросервисы
   kubectl apply -f ./kubernetes/reddit/ -n dev
 - Проверить работоспособность можно по адресу http://84.252.129.234:30218
-
 
 Домашняя работа №20
 
@@ -68,7 +74,6 @@ https://hub.docker.com/repository/docker/esklyarenkods/comment
 https://hub.docker.com/repository/docker/esklyarenkods/ui
 https://hub.docker.com/repository/docker/esklyarenkods/alertmanager
 https://hub.docker.com/repository/docker/esklyarenkods/prometheus
-
 
 Домашняя работа №17
 
